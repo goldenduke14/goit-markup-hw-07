@@ -1,0 +1,19 @@
+/* header */
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.header .list {
+  list-style: none;
+}
+.header .link {
+  text-decoration: none;
+}
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-color);
+}
