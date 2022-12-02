@@ -18,7 +18,7 @@
   background-size: cover;
   background-color: var(--fourth-bg-color);
 }
-.hero-title {
+.hero__title {
   margin: 0 auto;
   max-width: 696px;
   color: var(--primary-white-color);
@@ -29,7 +29,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
+.hero__button {
   display: inline-block;
   border: 1px solid transparent;
   padding: 10px 32px;

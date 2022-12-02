@@ -3,14 +3,14 @@
   display: flex;
   /* align-items: flex-start; */
 }
-.header-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  text-decoration: none;
+  // text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -23,16 +23,16 @@
   /* border-bottom: 4px solid transparent;
   border-radius: 2px; */
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav__link.current {
   color: var(--accent-color);
   position: relative;
   /* border-bottom: 4px solid var(--accent-color); */
 }
-.site-nav .link.current::after {
+.site-nav__link.current::after {
   content: "";
   position: absolute;
   width: 100%;

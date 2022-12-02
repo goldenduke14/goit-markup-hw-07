@@ -2,22 +2,28 @@
 .examples {
   padding-bottom: 94px;
 }
-.examples .section-title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
 }
-.examples .list {
+.examples__list {
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-.examples-item {
+.examples__item {
   position: relative;
   width: calc((100% - 60px) / 3);
 }
-.examples-dscr {
+.examples__dscr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +42,6 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.examples-item:not(:last-child) {
+.examples__item:not(:last-child) {
   margin-right: 30px;
 }
