@@ -1004,7 +1004,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-subscr {
+.subscr {
   display: block;
   margin-left: auto;
   padding-top: 12px;
@@ -1012,7 +1012,7 @@ img {
   width: 570px;
 }
 
-.footer-subscr-text {
+.subscr__text {
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -1024,13 +1024,13 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-input {
+.subscr__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-input-mail {
+.subscr__mail {
   padding: 15px 16px;
   width: 358px;
   height: 50px;
@@ -1044,7 +1044,7 @@ img {
   outline: transparent;
 }
 
-.footer-input-mail::-webkit-input-placeholder {
+.subscr__mail::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1058,7 +1058,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input-mail::-moz-placeholder {
+.subscr__mail::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1070,7 +1070,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input-mail:-ms-input-placeholder {
+.subscr__mail:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1084,7 +1084,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input-mail::-ms-input-placeholder {
+.subscr__mail::-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1098,7 +1098,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input-mail::placeholder {
+.subscr__mail::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1114,7 +1114,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-subscr-btn {
+.subscr__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,7 +1140,7 @@ img {
   cursor: pointer;
 }
 
-.footer-subscr-icon {
+.subscr__icon {
   margin-left: 10px;
   fill: var(--primary-white-color);
 }
