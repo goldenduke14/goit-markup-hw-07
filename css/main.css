@@ -1251,7 +1251,7 @@ img {
   display: block;
 }
 
-.portfolio-hidden-dscr {
+.portfolio__hidden-dscr {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,12 +1289,12 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__link:hover .portfolio-hidden-dscr {
+.portfolio__link:hover .portfolio__hidden-dscr {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.portfolio-dscr {
+.portfolio__dscr {
   padding: 20px 24px;
   border-left: 1px solid var(--border-second-color);
   border-right: 1px solid var(--border-second-color);
