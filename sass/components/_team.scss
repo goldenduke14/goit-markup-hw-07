@@ -67,10 +67,7 @@
   justify-content: center;
   color: $color-social-media;
   border-radius: 50%;
-  // @include transition(color);
-  // transition-property: color, background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition();
   &:hover,
   &:focus {
     background-color: $accent-color;
