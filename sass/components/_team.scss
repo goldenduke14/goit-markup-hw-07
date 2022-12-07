@@ -67,7 +67,7 @@
   justify-content: center;
   color: $color-social-media;
   border-radius: 50%;
-  @include transition();
+  @include transition(color, background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;
