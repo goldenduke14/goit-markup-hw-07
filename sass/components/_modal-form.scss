@@ -54,7 +54,7 @@
   opacity: 0;
   pointer-events: none;
 }
-.modal-text {
+.modal__text {
   margin-bottom: 12px;
   font-family: "Roboto";
   font-style: normal;
@@ -65,13 +65,13 @@
   letter-spacing: 0.03em;
   color: var(--second-color-text);
 }
-.modal-form {
+.modal__form {
   position: relative;
 }
 .input-line {
   margin-bottom: 10px;
 }
-.modal-label {
+.modal__label {
   display: block;
   /* width: 100%; */
   margin-bottom: 4px;
@@ -86,7 +86,7 @@
 .input-wrapper {
   position: relative;
 }
-.modal-input {
+.modal__input {
   padding: 0 12px 0 42px;
   width: 100%;
   height: 40px;
@@ -96,11 +96,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+.modal__input:focus {
   outline: transparent;
   border: 1px solid var(--accent-color);
 }
-.modal-input:focus + .input-icon {
+.modal__input:focus + .input-icon {
   fill: var(--accent-color);
 }
 .input-icon {
@@ -117,7 +117,7 @@
   /* display: block; */
   margin-bottom: 20px;
 }
-.modal-textarea {
+.modal__textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -129,14 +129,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-textarea::placeholder {
+.modal__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color:rgba(117, 117, 117, 0.5);
 }
-.modal-textarea:focus {
+.modal__textarea:focus {
   outline: 1px solid transparent;
   border: 1px solid var(--accent-color);
 }
@@ -186,7 +186,7 @@
   text-decoration: underline;
   color: var(--accent-color);
 }
-.modal-button {
+.modal__button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -208,7 +208,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover,
-.modal-button:focus {
+.modal__button:hover,
+.modal__button:focus {
   background-color: #188ce8;
 }
