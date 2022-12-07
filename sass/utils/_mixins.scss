@@ -1,6 +1,6 @@
 @mixin transition($property...) {
   transition-property: $property;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @mixin widthItem($items) {

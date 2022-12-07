@@ -20,10 +20,8 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background: #ffffff;
+  @include transition(transform);
+  background: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -43,11 +41,11 @@
   border-radius: 50%;
 }
 .close-icon {
-  fill: var(--third-color-text);
-}
-.close-icon:hover,
-.close-icon:focus {
-  fill: var(--accent-color);
+  fill: $third-color-text;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .is-hidden {
   visibility: hidden;
@@ -56,14 +54,14 @@
 }
 .modal__text {
   margin-bottom: 12px;
-  font-family: "Roboto";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color-text);
+  color: $second-color-text;
 }
 .modal__form {
   position: relative;
@@ -75,13 +73,13 @@
   display: block;
   /* width: 100%; */
   margin-bottom: 4px;
-  font-family: 'Roboto';
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--color-text);
+  color: $color-text;
 }
 .input-wrapper {
   position: relative;
@@ -92,26 +90,22 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:focus {
-  outline: transparent;
-  border: 1px solid var(--accent-color);
+  @include transition(border);
+  &:focus {
+    outline: transparent;
+    border: 1px solid $accent-color;
+  }
 }
 .modal__input:focus + .input-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  fill: var(--second-color-text);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $second-color-text;
+  @include transition(fill);
 }
 .input-line-textarea {
   /* display: block; */
@@ -125,37 +119,35 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__textarea::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color:rgba(117, 117, 117, 0.5);
-}
-.modal__textarea:focus {
-  outline: 1px solid transparent;
-  border: 1px solid var(--accent-color);
+  @include transition(border);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color:rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: 1px solid transparent;
+    border: 1px solid $accent-color;
+  }
 }
 .check-line {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: $indent;
 }
 .checkbox-agree {
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-text);
+  color: $color-text;
 }
 .checkbox-agree .icon-wrapper {
   display: flex;
@@ -164,18 +156,18 @@
   margin-right: 8px;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--second-color-text);
+  border: 2px solid $second-color-text;
   border-radius: 2px;
 }
 .checkbox-agree .agree-icon {
   fill: transparent;
 }
 .check-line input:checked + .checkbox-agree .icon-wrapper {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
 }
 .check-line input:checked + .checkbox-agree .agree-icon {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 .agree-text {
   margin-left: 4px;
@@ -184,7 +176,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .modal__button {
   position: absolute;
@@ -193,22 +185,20 @@
   min-width: 200px;
   height: 50px;
   padding: 10px 52px;
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  background-color: $accent-color;
+  color: $primary-white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  font-family: Roboto;
+  font-family: $primary-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__button:hover,
-.modal__button:focus {
-  background-color: #188ce8;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background-color: $second-accent-color;
+  }
 }

@@ -129,8 +129,8 @@ img {
   color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -182,8 +182,8 @@ img {
           align-items: center;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -253,8 +253,8 @@ img {
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -310,12 +310,10 @@ img {
 }
 
 .close-icon {
-  fill: var(--third-color-text);
+  fill: #000000;
 }
-
-.close-icon:hover,
-.close-icon:focus {
-  fill: var(--accent-color);
+.close-icon:hover, .close-icon:focus {
+  fill: #2196f3;
 }
 
 .is-hidden {
@@ -326,14 +324,14 @@ img {
 
 .modal__text {
   margin-bottom: 12px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color-text);
+  color: #212121;
 }
 
 .modal__form {
@@ -348,13 +346,13 @@ img {
   display: block;
   /* width: 100%; */
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--color-text);
+  color: #757575;
 }
 
 .input-wrapper {
@@ -374,14 +372,13 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__input:focus {
   outline: transparent;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .modal__input:focus + .input-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .input-icon {
@@ -390,7 +387,7 @@ img {
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  fill: var(--second-color-text);
+  fill: #212121;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -419,7 +416,6 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -427,7 +423,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -435,7 +430,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -443,7 +437,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -451,7 +444,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -459,10 +451,9 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__textarea:focus {
   outline: 1px solid transparent;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .check-line {
@@ -485,13 +476,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-text);
+  color: #757575;
 }
 
 .checkbox-agree .icon-wrapper {
@@ -507,7 +498,7 @@ img {
   margin-right: 8px;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--second-color-text);
+  border: 2px solid #212121;
   border-radius: 2px;
 }
 
@@ -516,12 +507,12 @@ img {
 }
 
 .check-line input:checked + .checkbox-agree .icon-wrapper {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border: none;
 }
 
 .check-line input:checked + .checkbox-agree .agree-icon {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
 }
 
 .agree-text {
@@ -531,7 +522,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: underline;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal__button {
@@ -542,13 +533,13 @@ img {
   min-width: 200px;
   height: 50px;
   padding: 10px 52px;
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  background-color: #2196f3;
+  color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -561,9 +552,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__button:hover,
-.modal__button:focus {
+.modal__button:hover, .modal__button:focus {
   background-color: #188ce8;
 }
 
@@ -764,8 +753,8 @@ img {
   border-radius: 50%;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -829,8 +818,8 @@ img {
   border-radius: 4px;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -872,8 +861,8 @@ img {
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
@@ -940,8 +929,8 @@ img {
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1137,8 +1126,8 @@ img {
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1181,8 +1170,8 @@ img {
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1232,8 +1221,8 @@ img {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1250ms;
-          transition-duration: 1250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
