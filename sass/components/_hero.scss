@@ -16,12 +16,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: var(--fourth-bg-color);
+  background-color: $fourth-bg-color;
 }
 .hero__title {
   margin: 0 auto;
   max-width: 696px;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -36,13 +36,13 @@
   border-radius: 4px;
   margin-top: 30px;
   min-width: 216px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   cursor: pointer;
 }

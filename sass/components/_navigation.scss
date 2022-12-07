@@ -15,13 +15,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-color-text);
+  color: $second-color-text;
   @include transition(color);
   &:hover,
-  &:focus {color: var(--accent-color);}
+  &:focus {color: $accent-color;}
 }
 .site-nav__link.current {
-  color: var(--accent-color);
+  color: $accent-color;
   position: relative;
   /* border-bottom: 4px solid var(--accent-color); */
   &::after {
@@ -31,7 +31,7 @@
     /* height: 4px; */
     bottom: -1.5px;
     left: 0;
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid $accent-color;
     border-radius: 2px;
   }
 }

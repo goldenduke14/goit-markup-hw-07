@@ -4,13 +4,13 @@
   margin-left: auto;
 }
 .auth-nav__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: $indent;
 }
 .auth-nav__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--color-text);
+  color: $color-text;
   // text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -20,7 +20,7 @@
   @include transition(color);
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .auth-nav__icon {

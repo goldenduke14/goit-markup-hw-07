@@ -10,7 +10,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color-text);
+  color: $second-color-text;
 }
 .examples__list {
   padding: 0;
@@ -21,9 +21,10 @@
 }
 .examples__item {
   position: relative;
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  @include widthItem(3);
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: $indent;
   }
 }
 .examples__dscr {
@@ -43,5 +44,5 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }

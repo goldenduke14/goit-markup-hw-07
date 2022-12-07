@@ -2,7 +2,7 @@
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--second-bg-color);
+  background-color: $second-bg-color;
   text-align: center;
 }
 .team__title {
@@ -12,7 +12,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color-text);
+  color: $second-color-text;
 }
 .team__list {
   list-style: none;
@@ -21,14 +21,15 @@
 }
 .team__item {
   padding-bottom: 30px;
-  width: calc((100% - 90px) / 4);
-  background-color: var(--primary-white-color);
+  // width: calc((100% - 90px) / 4);
+  @include widthItem(4);
+  background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.team__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: $indent;
+  }
 }
 .team__subtitle {
   margin-top: 30px;
@@ -38,7 +39,7 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color-text);
+  color: $second-color-text;
 }
 .team__text {
   margin-top: 0;
@@ -54,9 +55,9 @@
 .social__item {
   width: 44px;
   height: 44px;
-}
-.social__item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social__link {
   width: 100%;
@@ -64,18 +65,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-social-media);
+  color: $color-social-media;
   border-radius: 50%;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  // @include transition(color);
+  // transition-property: color, background-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }
 .social__icon {
   fill: currentColor;
