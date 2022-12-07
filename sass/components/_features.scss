@@ -12,9 +12,9 @@
 }
 .features__item {
   width: calc((100% - 90px) / 4);
-}
-.features__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .features__img {
   /* display: flex; */

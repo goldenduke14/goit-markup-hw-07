@@ -22,6 +22,9 @@
 .examples__item {
   position: relative;
   width: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .examples__dscr {
   display: flex;
@@ -41,7 +44,4 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
-.examples__item:not(:last-child) {
-  margin-right: 30px;
 }
